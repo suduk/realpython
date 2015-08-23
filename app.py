@@ -13,7 +13,7 @@ def hello_world():
 def is_name(name):
 	if name == 'lukasz':
 		return "hello {}, how are you".format(name)
-	else: return "name not found",404	
+	else: return "name not found",404
 
 @app.route('/integer/<int:value>')
 def int_type(value):
@@ -25,9 +25,10 @@ def float_type(value):
 	print "value:",value + 1.1
 	return "correct"
 
+
 @app.route('/path/<path:value>')
 def path_type(value):
-	print "value:",value
+	print "value:", value
 	return "correct"
 
 if __name__=='__main__':
