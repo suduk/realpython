@@ -11,7 +11,7 @@ def hello_world():
 
 @app.route('/name/<name>')
 def is_name(name):
-	if name == 'lukasz':
+	if name.lower() == 'lukasz':
 		return "hello {}, how are you".format(name)
 	else: return "name not found",404
 
